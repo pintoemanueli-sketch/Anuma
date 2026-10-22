@@ -1,72 +1,430 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>a cabana</title>
-    <link rel="stylesheet" href="style.css">
+    <title>A Cabana - Elenco e Experiências</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #101a16;
+            color: #f5f1e8;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #17231d;
+            padding: 20px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo {
+            color: #d8b77a;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #d8b77a;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 70px 20px;
+            background: linear-gradient(
+                rgba(16, 26, 22, 0.75),
+                rgba(16, 26, 22, 0.95)
+            );
+        }
+
+        .hero h1 {
+            color: #d8b77a;
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: 0 auto 25px;
+        }
+
+        .botao {
+            display: inline-block;
+            background: #d8b77a;
+            color: #17231d;
+            padding: 12px 22px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 12px;
+        }
+
+        .botao:hover {
+            background: #f0d49b;
+        }
+
+        main {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        section {
+            padding: 45px 0;
+            scroll-margin-top: 20px;
+        }
+
+        h2 {
+            color: #d8b77a;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .introducao {
+            color: #c4c9c1;
+            margin-bottom: 25px;
+        }
+
+        .atores {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(250px, 1fr));
+            gap: 22px;
+        }
+
+        .ator {
+            background: #1d2b24;
+            border: 1px solid #39483d;
+            border-radius: 12px;
+            padding: 22px;
+        }
+
+        .ator h3 {
+            color: #d8b77a;
+            font-size: 22px;
+        }
+
+        .personagem {
+            color: #c4c9c1;
+            margin-bottom: 12px;
+        }
+
+        details {
+            border-top: 1px solid #435046;
+            margin-top: 15px;
+            padding-top: 12px;
+        }
+
+        summary {
+            color: #d8b77a;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        details p {
+            margin-top: 12px;
+            color: #e1e5df;
+        }
+
+        .sinopse {
+            background: #1d2b24;
+            border-radius: 12px;
+            padding: 25px;
+        }
+
+        .fonte {
+            font-size: 14px;
+            color: #c4c9c1;
+            margin-top: 12px;
+        }
+
+        .fonte a {
+            color: #d8b77a;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #17231d;
+            color: #c4c9c1;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+        }
+    </style>
 </head>
-<body> 
-    <header>
-  <a href="https://www.youtube.com/watch?v=6MwIH16X4eU"> LINK DO FILME </a>
-    </header>
-    <h1>a cabana</h1> 
-    <img src="imag_dest_18_04_17_cabana.jpg">
-    <ul>
-        <li>Sam Worthington</li>
-        <li>Octavia Spencer</li>
-        <li>Tim McGraw</li>
-        <li>Radha Mitchell</li>
-        <li>Megan Charpentier</li>
-        <li>Gage Munroe</li>
-        <li>Amélie Eve</li>
-        <li>Aviv Alush</li>
-        <li>Sumire</li>
-        <li>Alice Braga</li>
-        <li>Graham Greene</li>
-    </ul>
-    <img src="download.jpeg">
-    <p>uma historia emocionante sobre amor perda e reencontro com a fé</p>
-    <p>uma confluencia e caminhos</h2><img class="img1" src="DESTAQUE-POST-1024x689.jpg">
-    <p>A escuridão se aproxima</p>
-    <p>O mergulho</p>
-    <p>A grande tristeza</p>
-    <p>Adivinhe quem vem pra jantar</p>
-    <p>Aula de voo</p>
-    <p>Deus no cais</p>
-    <p>Um café da manhã de campeoẽs</p>
-    <p>A muito tempo, num jardim muito, muito distante</p>
-    <p>Andando sobre a água</p>
-    <p>Olha o juiz ai, gente</p>
-    <p>Na barriga das feras</p>
-    <p>Um encontro de corações</p>
-    <p>Verbos e outras liberdades</p>
-    <p>Um festival de amigos</p>
-    <p>Manhã de amigos</p>
-    <p>Escolhas do coração</p>
-    <p>Ondulações se espalhando</p>
-    <p>A Cabana é um romance que aborda temas profundos como dor, fé, perdão e a relação do ser humano com Deus. A obra conta a história de Mackenzie Allen Phillips, um homem que enfrenta uma grande tragédia: o desaparecimento e a morte presumida de sua filha mais nova durante um acampamento em família.</p>
-    <p>Anos depois do ocorrido, Mack recebe um misterioso convite para retornar à cabana onde tudo aconteceu. Mesmo com dúvidas e sofrimento, ele decide ir ao local e acaba vivendo uma experiência inesperada e sobrenatural, na qual encontra três figuras que representam Deus, Jesus e o Espírito Santo.</p>
-    <p>Durante esse encontro, o personagem principal passa por um processo de reflexão profunda sobre sua dor, sua fé e o sentido do sofrimento humano. As conversas que ele tem com essas figuras o levam a questionar suas crenças e a repensar sua forma de enxergar Deus e o mundo.</p>
-    <p>Ao final da história, Mack não apenas enfrenta suas dores, mas também encontra um caminho para o perdão e para a aceitação do passado. Dessa forma, o livro transmite a ideia de que, mesmo diante de grandes perdas, é possível buscar cura emocional e espiritual.</p>
-    <p>Em síntese, a obra não se concentra em ação ou suspense, mas sim em provocar reflexões sobre temas existenciais e religiosos, levando o leitor a pensar sobre sofrimento, amor e esperança.</p>
-    <p>O livro A Cabana foi escrito por William P. Young.
-William P. Young nasceu em 1955, no Canadá, e cresceu em um contexto religioso cristão, influenciado principalmente pela tradição evangélica. Antes de se tornar escritor, ele trabalhou em diversas áreas e teve uma vida marcada por dificuldades pessoais e financeiras, além de experiências familiares complexas.</p>
-<p>A ideia de A Cabana surgiu inicialmente como um presente que ele escreveu para seus filhos, sem intenção de publicação. No entanto, o manuscrito acabou circulando entre amigos e conhecidos, chamando atenção por sua abordagem diferente sobre fé e espiritualidade. Com o tempo, o texto foi revisado e publicado, tornando-se um grande sucesso mundial.</p>
-<p>A escrita de William P. Young é marcada por temas como espiritualidade, perdão, cura emocional e questionamentos sobre a imagem tradicional de Deus. Ele costuma explorar essas ideias de forma simbólica e reflexiva, o que fez com que A Cabana gerasse tanto admiração quanto debate entre leitores e críticos.</p>
-<p>Uma confluencias e caminhos</p>
-<h2>No capítulo “Uma Confluência de Caminhos”, do livro A Cabana, Mack continua sua experiência na cabana e começa a compreender melhor questões relacionadas a Deus, ao sofrimento, à liberdade e às escolhas humanas. Ele percebe que sua visão de Deus estava muito ligada à ideia de julgamento e punição, mas passa a enxergá-lo como alguém que valoriza o amor, a liberdade e os relacionamentos. O capítulo mostra que cada pessoa segue diferentes caminhos na vida, e que esses caminhos podem se encontrar em determinados momentos. Para Mack, esse encontro representa uma oportunidade de enfrentar sua dor, sua culpa e sua raiva pela morte de sua filha, Missy. Aos poucos, ele entende que não pode mudar o passado nem encontrar respostas para tudo o que aconteceu, mas pode escolher como lidar com seu sofrimento e seguir em frente. Dessa forma, o capítulo destaca a importância do amor, do perdão e da liberdade para superar a dor e encontrar um novo sentido para a vida.</h2>
-<h2>O mergulho</p>
-<p>No capítulo “O Mergulho”, do livro A Cabana, Mack passa por uma experiência profunda que representa uma mudança em sua forma de enxergar a própria vida e seus sentimentos. O mergulho simboliza a necessidade de entrar em contato com suas dores, medos e lembranças, em vez de tentar fugir delas. Durante essa experiência, Mack começa a compreender que precisa confiar, deixar de tentar controlar tudo e aceitar que nem sempre terá respostas para os acontecimentos dolorosos de sua vida. O capítulo também reforça a importância do amor, do perdão e da confiança em Deus. Assim, o “mergulho” não representa apenas algo físico, mas principalmente uma transformação interior de Mack, que começa a enfrentar seu sofrimento de maneira diferente e a perceber que pode encontrar liberdade e paz ao abandonar parte de sua culpa e de sua necessidade de entender tudo.</h2>
-<h2>A grande tristesa</p>
-<p>No capítulo “A Grande Tristesa”, do livro A Cabana, Mack enfrenta de forma mais intensa a dor causada pela morte de sua filha, Missy. A grande tristeza representa o sofrimento profundo que ele carrega desde o desaparecimento dela, além da culpa, da raiva e da dificuldade de aceitar o que aconteceu. Durante sua experiência na cabana, Mack começa a perceber que não precisa esconder ou negar seus sentimentos e que pode falar sobre sua dor. Ele também entende que Deus conhece seu sofrimento e não o abandona por causa de sua revolta ou de suas dúvidas. O capítulo mostra que enfrentar a tristeza é uma parte importante do processo de cura e que o amor por Missy continua existindo mesmo depois de sua morte. Dessa forma, Mack começa a compreender que precisa deixar de carregar sozinho o peso da culpa e da dor para conseguir encontrar paz e seguir em frente.</h2>
-<h2>Adivinhe quem vem pra jantar</p>
-<h2>No capítulo **“Adivinhe quem vem pra jantar”**, do livro _A Cabana_, de William P. Young, Mackenzie participa de um jantar com a presença de personagens que representam Deus, Jesus e o Espírito Santo. O capítulo é importante porque mostra Mack começando a compreender Deus de uma maneira diferente daquela que aprendeu ao longo da vida. Durante a refeição, há momentos de conversa, acolhimento e reflexão, e Mack percebe que Deus não é alguém distante, severo ou interessado apenas em julgá-lo. Pelo contrário, ele é apresentado como alguém que deseja se relacionar com as pessoas com amor, liberdade e proximidade. O jantar também simboliza a união e a convivência entre os três personagens divinos, mostrando que eles vivem em uma relação baseada no amor e na confiança. Ao longo do capítulo, Mack começa a questionar suas próprias ideias sobre culpa, sofrimento, perdão e religião, percebendo que muitas de suas dores estão ligadas à dificuldade de aceitar o amor e a presença de Deus em sua vida. Assim, o capítulo representa um momento de transformação para Mack, pois ele começa a abandonar algumas de suas antigas crenças e a enxergar Deus de forma mais humana, próxima e amorosa.</h2>
-<h2>Aula de voo</p>
-<p>No capítulo **“Aula de voo”**, do livro _A Cabana_, de William P. Young, Mackenzie passa por uma experiência simbólica que o ajuda a refletir sobre sua vida, suas escolhas e sua relação com Deus. Durante essa experiência, ele é colocado em uma situação em que precisa aprender a confiar e a enxergar as coisas de uma perspectiva diferente. A ideia de “voar” representa justamente a necessidade de abandonar o medo, o controle e os limites que Mack impôs a si mesmo depois das tragédias que enfrentou. Ao longo do capítulo, ele percebe que nem sempre consegue compreender os acontecimentos da vida e que tentar controlar tudo pode aumentar seu sofrimento. A experiência também mostra a importância da confiança e da liberdade, fazendo Mack começar a entender que Deus não deseja obrigá-lo a nada, mas ajudá-lo a enxergar além de sua própria dor. Dessa forma, o capítulo contribui para a transformação de Mack, mostrando que superar o sofrimento envolve aprender a confiar, deixar de lado o desejo de controlar todas as situações e permitir-se olhar para a vida sob uma nova perspectiva.</h2>
-<h2>Deus nos cais</p>
-<p>No capítulo **“Deus nos cais”**, do livro _A Cabana_, de William P. Young, Mackenzie continua sua jornada de reflexão sobre Deus, o sofrimento e as escolhas humanas. Nesse momento, ele percebe que Deus não está distante da dor das pessoas e que também sofre quando seus filhos passam por situações difíceis. O capítulo mostra que Deus não controla as decisões humanas de maneira autoritária, pois concede liberdade para que cada pessoa faça suas próprias escolhas, mesmo quando elas podem trazer consequências dolorosas. Mack começa a compreender que o sofrimento não significa necessariamente que Deus tenha abandonado alguém ou que esteja punindo essa pessoa. A conversa também o leva a questionar sua visão sobre culpa, justiça e responsabilidade, percebendo que não é possível entender completamente todos os acontecimentos da vida. Assim, o capítulo reforça a ideia de que Deus permanece presente mesmo nos momentos de maior sofrimento e que o amor, o perdão e a liberdade são fundamentais para compreender a relação entre Deus e os seres humanos.</h2>
-<h2>Um café da manhã de campeoẽs</p>
-<p>No capítulo **“Um café da manhã de campeões”**, do livro _A Cabana_, de William P. Young, Mackenzie vive mais um momento de aprendizado durante sua estadia na cabana. O capítulo apresenta uma situação aparentemente simples, como um café da manhã, mas que serve para mostrar a importância dos relacionamentos, do cuidado e do amor. Mack começa a perceber que Deus não está interessado apenas em grandes acontecimentos ou em questões religiosas, mas também nas pequenas experiências do cotidiano e na forma como as pessoas se relacionam. Ao longo do capítulo, ele continua refletindo sobre sua dor, especialmente sobre a perda de sua filha, e começa a compreender que precisa enfrentar seus sentimentos em vez de permanecer preso à culpa e à tristeza. A convivência com as figuras divinas também ajuda Mack a entender que ele não precisa carregar sozinho o peso de tudo o que aconteceu. Dessa maneira, o capítulo mostra o avanço de sua transformação interior, reforçando temas como amor, confiança, perdão e a importância de deixar para trás sentimentos que impedem a pessoa de seguir em frente.</h2>
+
+<body>
+
+<header>
+    <div class="logo">A CABANA</div>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#historia">História</a>
+        <a href="#elenco">Atores</a>
+        <a href="#sobre">Sobre</a>
+    </nav>
+</header>
+
+<section class="hero" id="inicio">
+    <h1>A Cabana</h1>
+
+    <p>
+        Conheça os atores do filme, seus personagens e a importância
+        de suas participações em uma história de amor, perda,
+        fé, perdão e esperança.
+    </p>
+
+    <a class="botao"
+       href="https://www.youtube.com/watch?v=6MwIH16X4eU"
+       target="_blank"
+       rel="noopener noreferrer">
+        Assistir ao filme
+    </a>
+</section>
+
+<main>
+
+    <section id="historia">
+        <h2>Sobre o filme</h2>
+
+        <div class="sinopse">
+            <p>
+                A Cabana é um filme de 2017 baseado no livro
+                de William P. Young. A história acompanha Mack
+                Phillips, um pai que enfrenta a perda de sua
+                filha mais nova. Após receber um convite misterioso
+                para retornar à cabana ligada à tragédia, ele vive
+                uma experiência que transforma sua maneira de
+                compreender a dor, a fé, o amor e o perdão.
+            </p>
+        </div>
+    </section>
+
+    <section id="elenco">
+        <h2>Conheça os atores</h2>
+
+        <p class="introducao">
+            Clique no nome de cada seção para descobrir mais
+            sobre o personagem, sua participação na história
+            e as informações disponíveis sobre a experiência
+            do ator no filme.
+        </p>
+
+        <div class="atores">
+
+            <article class="ator">
+                <h3>Sam Worthington</h3>
+                <p class="personagem">Personagem: Mack Phillips</p>
+                <p>É o protagonista da história, um pai que precisa enfrentar uma grande tragédia.</p>
+
+                <details>
+                    <summary>Experiência e feedback</summary>
+                    <p><strong>Entrada:</strong> aparece desde o início, apresentando a jornada de Mack.</p>
+                    <p><strong>Experiência:</strong> o papel exige transmitir tristeza, culpa, raiva e esperança.</p>
+                    <p><strong>Feedback:</strong> o diretor Stuart Hazeldine comentou sobre a identificação do ator com a dor e a trajetória do personagem. Esse comentário é do diretor, não uma declaração final do próprio Sam.</p>
+                </details>
+            </article>
+
+            <article class="ator">
+                <h3>Octavia Spencer</h3>
+                <p class="personagem">Personagem: Papa</p>
+                <p>Interpreta uma representação de Deus que ajuda Mack a refletir sobre sua dor.</p>
+
+                <details>
+                    <summary>Experiência e feedback</summary>
+                    <p><strong>Entrada:</strong> sua personagem ganha destaque quando Mack chega à cabana.</p>
+                    <p><strong>Experiência:</strong> sua atuação combina acolhimento, sabedoria e afeto.</p>
+                    <p><strong>Feedback:</strong> em entrevista, Spencer falou sobre seu interesse pelo trabalho de Sam Worthington e sobre a busca pela verdade emocional da personagem.</p>
+                </details>
+            </article>
+
+            <article class="ator">
+                <h3>Tim McGraw</h3>
+                <p class="personagem">Personagem: Willie</p>
+                <p>É um amigo de Mack e representa apoio e amizade em momentos difíceis.</p>
+
+                <details>
+                    <summary>Experiência e feedback</summary>
+                    <p><strong>Entrada:</strong> participa das cenas que apresentam as relações pessoais de Mack.</p>
+                    <p><strong>Experiência:</strong> seu papel ajuda a mostrar a importância da amizade e do apoio emocional.</p>
+                    <p><strong>Feedback:</strong> uma declaração pessoal final do ator deve ser confirmada por uma entrevista confiável antes de ser publicada.</p>
+                </details>
+            </article>
+
+            <article class="ator">
+                <h3>Radha Mitchell</h3>
+                <p class="personagem">Personagem: Nan Phillips</p>
+                <p>Interpreta a esposa de Mack e mãe de seus filhos.</p>
+
+                <details>
+                    <summary>Experiência e feedback</summary>
+                    <p><strong>Entrada:</strong> aparece nas cenas relacionadas à família Phillips.</p>
+                    <p><strong>Experiência:</strong> ajuda a mostrar as diferentes maneiras de enfrentar o sofrimento familiar.</p>
+                    <p><strong>Feedback:</strong> para registrar sua opinião pessoal sobre o resultado do filme, é necessário consultar uma entrevista da atriz.</p>
+                </details>
+            </article>
+
+            <article class="ator">
+                <h3>Megan Charpentier</h3>
+                <p class="personagem">Personagem: Kate Phillips</p>
+                <p>Interpreta uma das filhas de Mack e Nan.</p>
+
+                <details>
+                    <summary>Experiência e feedback</summary>
+                    <p><strong>Entrada:</strong> participa das cenas que apresentam a família e as consequências da tragédia.</p>
+                    <p><strong>Experiência:</strong> sua personagem contribui para mostrar o impacto emocional dos acontecimentos.</p>
+                    <p><strong>Feedback:</strong> uma opinião pessoal da atriz precisa de uma fonte verificável.</p>
+                </details>
+            </article>
+
+            <article class="ator">
+                <h3>Gage Munroe</h3>
+                <p class="personagem">Personagem: Josh Phillips</p>
+                <p>Interpreta o filho de Mack e Nan.</p>
+
+                <details>
+                    <summary>Experiência e feedback</summary>
+                    <p><strong>Entrada:</strong> participa da apresentação da vida familiar dos Phillips.</p>
+                    <p><strong>Experiência:</strong> seu papel ajuda a mostrar como a tragédia afeta toda a família.</p>
+                    <p><strong>Feedback:</strong> uma declaração pessoal do ator deve ser acrescentada somente após a confirmação de uma fonte.</p>
+                </details>
+            </article>
+
+            <article class="ator">
+                <h3>Amélie Eve</h3>
+                <p class="personagem">Personagem: Missy Phillips</p>
+                <p>Interpreta a filha mais nova de Mack, central para os acontecimentos do filme.</p>
+
+                <details>
+                    <summary>Experiência e feedback</summary>
+                    <p><strong>Entrada:</strong> aparece na parte inicial da história e permanece importante para a jornada emocional de Mack.</p>
+                    <p><strong>Experiência:</strong> seu papel está relacionado aos temas de amor, luto e memória.</p>
+                    <p><strong>Feedback:</strong> não atribuímos uma opinião pessoal à atriz sem uma entrevista verificável.</p>
+                </details>
+            </article>
+
+            <article class="ator">
+                <h3>Aviv Alush</h3>
+                <p class="personagem">Personagem: Jesus</p>
+                <p>Interpreta Jesus, uma das figuras encontradas por Mack na cabana.</p>
+
+                <details>
+                    <summary>Experiência e feedback</summary>
+                    <p><strong>Entrada:</strong> aparece durante a jornada de Mack na cabana.</p>
+                    <p><strong>Experiência:</strong> o papel envolve representar uma figura de acolhimento e orientação espiritual.</p>
+                    <p><strong>Feedback:</strong> uma declaração final do ator precisa ser confirmada por uma entrevista.</p>
+                </details>
+            </article>
+
+            <article class="ator">
+                <h3>Sumire</h3>
+                <p class="personagem">Personagem: Sarayu</p>
+                <p>Interpreta Sarayu, a representação do Espírito Santo no filme.</p>
+
+                <details>
+                    <summary>Experiência e feedback</summary>
+                    <p><strong>Entrada:</strong> participa dos encontros de Mack na cabana.</p>
+                    <p><strong>Experiência:</strong> sua personagem está associada à renovação e à transformação interior.</p>
+                    <p><strong>Feedback:</strong> uma opinião pessoal da atriz deve ser acompanhada de uma fonte confiável.</p>
+                </details>
+            </article>
+
+            <article class="ator">
+                <h3>Alice Braga</h3>
+                <p class="personagem">Personagem: Sophia</p>
+                <p>Interpreta uma personagem ligada às reflexões de Mack sobre justiça e julgamento.</p>
+
+                <details>
+                    <summary>Experiência e feedback</summary>
+                    <p><strong>Entrada:</strong> aparece durante a jornada de Mack na cabana.</p>
+                    <p><strong>Experiência:</strong> seu papel contribui para os questionamentos do protagonista sobre suas convicções.</p>
+                    <p><strong>Feedback:</strong> uma avaliação pessoal da atriz deve ser confirmada em entrevista.</p>
+                </details>
+            </article>
+
+            <article class="ator">
+                <h3>Graham Greene</h3>
+                <p class="personagem">Personagem: Male Papa</p>
+                <p>Interpreta uma versão masculina de Papa em uma parte da história.</p>
+
+                <details>
+                    <summary>Experiência e feedback</summary>
+                    <p><strong>Entrada:</strong> participa de uma parte da experiência de Mack na cabana.</p>
+                    <p><strong>Experiência:</strong> sua participação contribui para a dimensão simbólica da narrativa.</p>
+                    <p><strong>Feedback:</strong> uma opinião pessoal do ator sobre o resultado final deve ser confirmada por uma fonte.</p>
+                </details>
+            </article>
+
+        </div>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre o projeto</h2>
+
+        <p class="introducao">
+            Este site apresenta o elenco do filme A Cabana,
+            seus personagens e a importância de suas participações
+            na história. As experiências descritas são contextualizações
+            dos papéis e não devem ser confundidas com depoimentos
+            pessoais dos atores.
+        </p>
+
+        <p class="fonte">
+            Para consultar informações sobre o filme:
+            <a href="https://www.lionsgate.com/movies/the-shack"
+               target="_blank"
+               rel="noopener noreferrer">
+                Site oficial de A Cabana
+            </a>
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <p>Projeto educativo sobre o filme A Cabana (2017).</p>
+</footer>
+
 </body>
 </html>
