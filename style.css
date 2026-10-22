@@ -1,14 +1,165 @@
-body{
-    background-color: rgb(91, 185, 240);
+
+/* CONFIGURAÇÃO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-h1{
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(91, 185, 240);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(20, 30, 40);
+    line-height: 1.7;
+    padding: 20px;
+}
+
+/* TÍTULO PRINCIPAL */
+h1 {
     color: rgb(3, 2, 2);
     font-style: italic;
-}
-.img1{
-    width: 50%;
-}
-.img1{
-    width: 50%;
     text-align: center;
+    font-size: 42px;
+    margin: 25px 0;
+}
+
+/* SUBTÍTULOS */
+h2 {
+    color: rgb(15, 55, 90);
+    margin: 25px 0 15px;
+}
+
+h3 {
+    color: rgb(15, 55, 90);
+    margin-bottom: 10px;
+}
+
+/* CABEÇALHO E MENU */
+header {
+    background-color: rgb(25, 100, 155);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: rgb(255, 230, 130);
+}
+
+/* LINKS */
+a {
+    transition: color 0.3s ease;
+}
+
+/* IMAGENS */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.img1 {
+    width: 50%;
+    display: block;
+    margin: 20px auto;
+}
+
+/* LISTA DOS ATORES */
+ul {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 25px 45px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+li {
+    padding: 5px 0;
+}
+
+/* PARÁGRAFOS */
+p {
+    margin: 15px 0;
+    text-align: justify;
+}
+
+/* CARTÕES DE CONTEÚDO */
+.ator {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.ator:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* DETALHES DOS ATORES */
+details {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+summary {
+    cursor: pointer;
+    color: rgb(15, 55, 90);
+    font-weight: bold;
+}
+
+summary:hover {
+    color: rgb(190, 85, 20);
+}
+
+/* RODAPÉ */
+footer {
+    background-color: rgb(25, 100, 155);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* ADAPTAÇÃO PARA CELULARES */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .img1 {
+        width: 100%;
+    }
+
+    ul {
+        padding: 20px 35px;
+    }
+
+    header {
+        padding: 15px;
+    }
 }
