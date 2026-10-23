@@ -1,4 +1,3 @@
-
 /* CONFIGURAÇÃO GERAL */
 * {
     margin: 0;
@@ -11,16 +10,16 @@ html {
 }
 
 body {
-    background-color: rgb(91, 185, 240);
+    background-color: rgb(210, 235, 255);
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(20, 30, 40);
+    color: rgb(20, 45, 75);
     line-height: 1.7;
     padding: 20px;
 }
 
 /* TÍTULO PRINCIPAL */
 h1 {
-    color: rgb(3, 2, 2);
+    color: rgb(15, 45, 85);
     font-style: italic;
     text-align: center;
     font-size: 42px;
@@ -29,18 +28,18 @@ h1 {
 
 /* SUBTÍTULOS */
 h2 {
-    color: rgb(15, 55, 90);
+    color: rgb(20, 75, 130);
     margin: 25px 0 15px;
 }
 
 h3 {
-    color: rgb(15, 55, 90);
+    color: rgb(20, 75, 130);
     margin-bottom: 10px;
 }
 
 /* CABEÇALHO E MENU */
 header {
-    background-color: rgb(25, 100, 155);
+    background-color: rgb(25, 85, 150);
     padding: 20px;
     text-align: center;
     border-radius: 10px;
@@ -54,7 +53,7 @@ header a {
 }
 
 header a:hover {
-    color: rgb(255, 230, 130);
+    color: rgb(140, 210, 255);
 }
 
 /* LINKS */
@@ -79,7 +78,7 @@ img {
 
 /* LISTA DOS ATORES */
 ul {
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.85);
     padding: 25px 45px;
     margin: 20px auto;
     border-radius: 10px;
@@ -98,20 +97,20 @@ p {
 
 /* CARTÕES DE CONTEÚDO */
 .ator {
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.92);
     padding: 20px;
     margin: 20px 0;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 10px rgba(15, 65, 120, 0.15);
 }
 
 .ator:hover {
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 6px 15px rgba(15, 65, 120, 0.25);
 }
 
 /* DETALHES DOS ATORES */
 details {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(225, 240, 255, 0.9);
     padding: 15px;
     margin-top: 15px;
     border-radius: 8px;
@@ -119,17 +118,17 @@ details {
 
 summary {
     cursor: pointer;
-    color: rgb(15, 55, 90);
+    color: rgb(20, 75, 130);
     font-weight: bold;
 }
 
 summary:hover {
-    color: rgb(190, 85, 20);
+    color: rgb(45, 135, 210);
 }
 
 /* RODAPÉ */
 footer {
-    background-color: rgb(25, 100, 155);
+    background-color: rgb(25, 85, 150);
     color: white;
     text-align: center;
     padding: 15px;
